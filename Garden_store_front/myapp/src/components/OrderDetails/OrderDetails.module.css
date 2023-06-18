@@ -1,0 +1,38 @@
+.wrapper {
+  width: 496px;
+  max-height: 500px;
+  height: auto;
+  border: 2px solid #000000;
+  border-radius: 21px;
+  padding: 30px;
+}
+
+.container_title h2 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.container_total {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total_sum {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.total_title {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+@media (max-width:700px){
+  .wrapper {
+    width: auto;
+    padding: 10px;
+  }
+}

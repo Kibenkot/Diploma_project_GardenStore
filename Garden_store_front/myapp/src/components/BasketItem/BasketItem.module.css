@@ -1,0 +1,163 @@
+.wrapper {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid var(--brand-color12);
+  border-bottom: 1px solid var(--brand-color12);
+}
+
+
+.product_discont_price,
+.product_price {
+  width: 20%;
+}
+
+.product_img{
+  width: 200px;
+}
+
+
+.wrapper img {
+  width: 193px;
+  height: 167px;
+  border-radius: 7px;
+}
+
+.product_title_count {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 15px;
+}
+
+.product_title_count h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--brand-color6);
+}
+
+.product_counter {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.product_counter button {
+  border: none;
+  background-color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.product_counter p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.product_discont_price,
+.product_price {
+  display: flex;
+  justify-content: center;
+}
+
+.product_discont_price {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.product_price {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration-line: line-through;
+  color: var(--brand-color5);
+}
+
+.close {
+  display: block;
+  display: flex;
+  align-items: flex-start;
+  color: var(--brand-color5);
+
+  height: 100%;
+  margin-top: 20px;
+}
+
+.icon_close {
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.close_mobil{
+  display: none;
+}
+
+@media (max-width:700px){
+
+  .wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 20px;
+
+  }
+
+  .product_discont_price,
+  .product_price,
+  .product_title_count {
+    width: 200px;
+  }
+
+  .product_title_count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0
+  }
+
+  .product_img{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product_img{
+    width: 100%;
+  }
+  .product_img_mobil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .close_mobil{
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 30px;
+    color: var(--brand-color5);
+  }
+    
+  
+  .icon_close {
+    font-size: xx-large;
+    cursor: pointer;
+  }
+
+  .close{
+    display: none;
+  }
+}

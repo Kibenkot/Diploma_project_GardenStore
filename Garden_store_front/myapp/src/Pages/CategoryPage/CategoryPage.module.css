@@ -1,0 +1,40 @@
+.page_title {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.page_title h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.container_products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  justify-content: space-between;
+  column-gap: 20px;
+
+}
+
+.container_filter {
+  margin: 50px 0;
+}
+
+.not_found {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width:1150px){
+  .container_products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_products div{
+    width: 300px;
+  }
+}

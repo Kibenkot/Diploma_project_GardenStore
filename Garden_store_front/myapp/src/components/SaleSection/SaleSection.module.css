@@ -1,0 +1,41 @@
+.wrapper {
+  height: 600px;
+}
+
+.section_title {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.section_title h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+
+  letter-spacing: 0.03em;
+}
+
+.sections_sale_products {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+ 
+}
+
+@media (max-width:1150px){
+  
+  .wrapper {
+    height: auto;
+  }
+
+  .sections_sale_products{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

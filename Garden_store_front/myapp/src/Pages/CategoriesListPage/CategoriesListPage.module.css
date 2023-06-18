@@ -1,0 +1,25 @@
+.page_title {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.page_title h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.container_categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 320px));
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+@media (max-width:1150px){
+  .container_categories{
+    display: flex;
+    flex-direction: column;
+  }
+
+}

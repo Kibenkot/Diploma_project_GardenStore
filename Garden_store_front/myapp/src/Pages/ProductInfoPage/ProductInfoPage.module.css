@@ -1,0 +1,153 @@
+.page_title {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.page_title h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.container_img_info {
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 80px; */
+  margin-top: 80px;
+}
+
+.page_img {
+  width: 70%;
+}
+
+.page_img img {
+  width: 710px;
+  height: 710px;
+  object-fit: contain;
+  transition: 0.5s;
+
+  margin: 20px 60px 200px 60px;
+}
+
+.page_img:hover img {
+  transform: scale(1.3);
+}
+
+.container_page_img {
+  transition: 0.5s;
+  z-index: 9000;
+}
+
+.container_page_img:hover img {
+  transform: scale(1.3);
+  margin: 80px 80px;
+}
+
+.page_info_btn {
+  width: 30%;
+  margin: 20px 0 200px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item_btn {
+  border-bottom: 1px dashed var(--brand-color10);
+  display: flex;
+}
+.prices_discont_item {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.discont_price_item {
+  font-weight: 600;
+  font-size: 70px;
+}
+
+.price_item {
+  font-weight: 500;
+  font-size: 28px;
+  text-decoration-line: line-through;
+  color: var(--brand-color5);
+}
+
+.discont_item {
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--brand-color7);
+}
+
+.description_title {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 25px 0 15px 0;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.not_found {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width:1350px){
+  .container_img_info {
+    flex-direction: column;
+  }
+
+  .page_img,
+  .page_info_btn{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .page_info_btn{
+    align-items: center;
+    margin: 0 0 100px 0;
+  }
+
+  .page_img:hover img {
+    transform: scale(1);
+  }
+
+  .page_img img {
+    margin: 20px 60px 60px 60px;
+
+  }
+}
+
+@media (max-width:750px){
+  .page_img img {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (max-width:500px){
+  .page_img img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .page_title h1 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .prices_discont_item {
+    width: 320px;
+  }
+
+  .discont_price_item {
+    font-weight: 600;
+    font-size: 50px;
+  }
+}

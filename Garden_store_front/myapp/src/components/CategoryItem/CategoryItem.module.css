@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 25%;
+  padding: 20px 50px 20px 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title p {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.wrapper img {
+  object-fit: cover;
+  /* width: 400px;
+  height: 350px; */
+  width: 320px;
+  height: 350px;
+}
+
+
+@media (max-width:1700px){
+  .wrapper{
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+  }
+
+
+}

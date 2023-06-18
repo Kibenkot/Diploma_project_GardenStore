@@ -1,0 +1,86 @@
+.num_phone {
+  width: 473px;
+  height: 75px;
+  background: var(--brand-color1);
+  border-radius: 25px;
+  border: none;
+
+  padding: 10px 40px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--brand-color9);
+}
+
+.comment_error {
+  color: red;
+  font-weight: 500;
+  font-size: 28px;
+
+  width: 473px;
+  align-items: center;
+}
+
+.form_btn {
+  width: 473px;
+  height: 75px;
+  border: 2.39494px solid var(--brand-color1);
+  border-radius: 25px;
+
+  background: linear-gradient(
+    262.69deg,
+    var(--brand-color2) 10.43%,
+    var(--brand-color3) 140.36%
+  );
+
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--brand-color1);
+}
+
+.order_btn,
+.order_input {
+  width: 432px;
+}
+
+.order_input {
+  border: 1px solid black;
+}
+
+@media (max-width:550px){
+  .num_phone,
+  .form_btn {
+    width: 320px;
+    height: 55px;
+  }
+
+  .container_form{
+    display: flex;
+    justify-content: center;
+  }
+
+  .comment_error {
+    font-weight: 300;
+    font-size: 18px;
+  
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container_btn{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width:400px){
+  .num_phone,
+  .form_btn {
+    width: 280px;
+    height: 55px;
+  }
+
+}

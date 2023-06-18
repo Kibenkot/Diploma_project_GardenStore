@@ -1,0 +1,135 @@
+.wrapper {
+  height: 130px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--brand-color1);
+}
+
+img {
+  width: 72px;
+}
+
+.logo_btn {
+  width: 20%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 100px;
+}
+
+.nav a {
+  font-weight: 500;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.basket {
+  width: 15%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  position: relative;
+}
+
+.icon_bag {
+  margin: 10px;
+  width: 35px;
+  height: 45px;
+  width: auto;
+  cursor: pointer;
+  color: black;
+}
+
+.basket_count {
+  color: red;
+  font-size: 15px;
+  font-weight: 500;
+
+  position: absolute;
+  top: 60px;
+  right: 27px;
+}
+
+.mobile_btn{
+  display: none;
+}
+
+.mobile{
+  display: none;
+}
+
+
+@media (max-width:1150px){
+  .mobile_btn{
+      display: block;
+      position: absolute;
+      cursor: pointer;
+      right: 35px;
+      top: 50px;
+      z-index: 10;
+      font-size: 35px;
+
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: var(--brand-color2);  
+    gap: 50px;
+  }
+
+  .basket{
+    display: none;
+  }
+
+  .active{
+    left: 0;
+  }
+
+  .nav a{
+      font-size: 40px;
+      color: white;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+  .mobile_btn_close{
+    color: white;
+    position: fixed;
+    right: 35px;
+    top: 50px;
+  }
+
+
+  .mobile_btn_category{
+    display: none;
+  }
+
+}
