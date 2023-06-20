@@ -27,7 +27,7 @@ export const fetchPostGetSale = (data) => {
     body: JSON.stringify(data),
   })
     .then((res) => res.json())
-    .then((json) => console.log("POST GET SALE--------", json));
+    .then((json) => console.log("POST GET SALE--------", json))
 };
 
 export const fetchPostGetOrder = (data) => {
@@ -38,5 +38,5 @@ export const fetchPostGetOrder = (data) => {
     body: JSON.stringify(data),
   })
     .then((res) => res.json())
-    .then((json) => console.log("POST GET ORDER--------", json));
+    .then((json) => console.log("POST GET ORDER--------", json))
 };

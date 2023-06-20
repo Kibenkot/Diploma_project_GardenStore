@@ -47,14 +47,6 @@ img {
   position: relative;
 }
 
-.icon_bag {
-  margin: 10px;
-  width: 35px;
-  height: 45px;
-  width: auto;
-  cursor: pointer;
-  color: black;
-}
 
 .basket_count {
   color: red;
@@ -63,7 +55,7 @@ img {
 
   position: absolute;
   top: 60px;
-  right: 27px;
+  right: 10px;
 }
 
 .mobile_btn{
@@ -72,6 +64,10 @@ img {
 
 .mobile{
   display: none;
+}
+
+.icon_basket{
+  width: 30px;
 }
 
 
@@ -124,7 +120,7 @@ img {
     color: white;
     position: fixed;
     right: 35px;
-    top: 50px;
+    top: 30px;
   }
 
 

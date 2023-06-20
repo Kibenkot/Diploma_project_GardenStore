@@ -17,10 +17,11 @@
 .comment_error {
   color: red;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 18px;
 
   width: 473px;
-  align-items: center;
+  text-align: center;
+  margin-top: -20px;
 }
 
 .form_btn {

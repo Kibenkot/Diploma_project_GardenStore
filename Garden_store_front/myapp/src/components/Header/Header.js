@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import s from "./Header.module.css";
 import { Link, NavLink } from "react-router-dom";
 import logo from "./media/logo_garden.png";
+import basket_1 from "./media/basket_1.svg";
 import Button from "../UI/Button/Button";
-import { HiOutlineShoppingBag } from "react-icons/hi";
 import { useSelector } from "react-redux";
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 
@@ -65,7 +65,7 @@ function Header() {
 
         <div className={s.basket}>
           <Link to="/basket">
-            <HiOutlineShoppingBag className={s.icon_bag} />
+            <img className={s.icon_basket} src={basket_1} alt="basket" />
             <div className={s.basket_count}>
               <p>{total_count}</p>
             </div>

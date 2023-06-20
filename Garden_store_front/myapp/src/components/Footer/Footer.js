@@ -1,8 +1,8 @@
 import React from "react";
 import s from "./Footer.module.css";
 import InteractiveMap from "../InteractiveMap/InteractiveMap";
-import { ImWhatsapp } from "react-icons/im";
-import { SlSocialInstagram } from "react-icons/sl";
+import whatsapp from "./media/whatsapp.svg"
+import instagram from "./media/instagram.svg"
 
 function Footer() {
   return (
@@ -14,13 +14,13 @@ function Footer() {
           <div className={s.wrapper_icon}>
             <div className={s.icon}>
               <a href="https://www.instagram.com">
-                <SlSocialInstagram className={s.icon_inst} />
+                <img className={s.icons} src={instagram} alt="instagram" />
                 <p>instagram</p>
               </a>
             </div>
             <div className={s.icon}>
               <a href="https://www.whatsapp.com">
-                <ImWhatsapp className={s.icon_whats} />
+                <img className={s.icons} src={whatsapp} alt="whatsapp" />
                 <p>WhatsApp</p>
               </a>
             </div>

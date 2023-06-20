@@ -44,6 +44,7 @@
   height: 31px;
   background-color: var(--brand-color1);
   border: 2px solid var(--brand-color5);
+  margin: 0px -15px 0px 20px;
 }
 
 .to_cart {
@@ -77,6 +78,12 @@
   border: 1px solid var(--brand-color2);
   color: var(--brand-color2);
   cursor: pointer;
+}
+
+.add_to_cart:hover{
+  background-color: var(--brand-color2);
+  border: 1px solid var(--brand-color8);
+  color: var(--brand-color1);
 }
 
 @media (max-width:500px){

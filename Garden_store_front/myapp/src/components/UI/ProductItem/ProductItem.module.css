@@ -24,9 +24,10 @@
 }
 
 .sale_img img {
-  object-fit: scale-down;
+  object-fit: contain;
   width: 300px;
   height: 300px; 
+  border-radius: 5%;
 }
 
 .prices_discont {
